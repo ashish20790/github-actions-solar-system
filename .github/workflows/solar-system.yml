@@ -6,7 +6,10 @@ on:
     branches:
       - main
       - 'feature/*'
-    
+
+permissions: 
+  packages: write
+
 env:
   MONGO_URI: ${{ vars.MONGO_URI }}
   MONGO_USERNAME: ${{ vars.MONGO_USERNAME }}
