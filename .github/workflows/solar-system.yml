@@ -81,6 +81,7 @@ jobs:
             tags: ghcr.io/${{github.repository_owner}}/solar-system:${{github.sha}}
             push: true
             context: .
+            github-token: ${{secrets.GITHUB_TOKEN}}
             
     dev-deploy:
       runs-on: ubuntu-latest
